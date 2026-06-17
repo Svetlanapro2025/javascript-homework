@@ -1,0 +1,22 @@
+let bonusBalance = 500;
+let purchaseMonth = 2;
+let regularBonusPercent = 10;
+let premiumBonusPercent = 20;
+let frequentBonusPercent = 5;
+let purchaseAmount = 3000;
+let finalBonusPercent;
+
+
+if(bonusBalance > 5000) {
+  finalBonusPercent = premiumBonusPercent;
+} else {
+  finalBonusPercent = regularBonusPercent;
+}
+
+if(purchaseMonth > 1) {
+  finalBonusPercent += frequentBonusPercent;
+}
+
+bonusBalance = purchaseAmount * finalBonusPercent / 100 + bonusBalance;
+
+console.log('Процент от покупки: ' + finalBonusPercent);

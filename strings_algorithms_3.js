@@ -13,8 +13,7 @@ let errorOrders = 3;
 // показываем сколько новых заказов, а сколько заказов с ошибкой
 if (newOrders > errorOrders) {
   console.log('В магазине ' + newOrders + ' новых заказов (с ошибкой: ' + errorOrders + ')');
-} else if (newOrders === errorOrders) 
-{
+} else if (newOrders === errorOrders) {
   console.log('ВНИМАНИЕ! Что-то идет не так! Все новые заказы завершились ошибкой!');
 }
 
